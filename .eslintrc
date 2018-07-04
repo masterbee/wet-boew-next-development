@@ -1,0 +1,11 @@
+{
+  "extends": "jquery",
+  "env": {
+    "amd": true,
+    "browser": true,
+    "es6" : true
+  },
+  "globals": {
+    "requirejs": true
+  }
+}
