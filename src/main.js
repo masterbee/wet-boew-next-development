@@ -5,8 +5,8 @@ require( [ "modules/wrench" ], function( wrench ) {
 
     for ( let node of nodes ) {
 
-        let cmd = wrench.parse( node.dataset.wb5 ),
-            module = "modules/" + cmd.command;
+        let cmd = wrench.parseAttribute( node.dataset.wb5 ),
+            module = "modules/" + cmd.action;
 
         require( [ module ], function( mod ) {
             mod.handle.call( node, cmd.selector, cmd.options );
